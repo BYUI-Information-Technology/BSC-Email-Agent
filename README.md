@@ -1,8 +1,5 @@
 <div align="center">
-
-  <h1>BSC-Agent</h1>
-  <em>A prototype built by BYU-Idaho using <a href="https://n8n.io/">n8n</a>.</em>
-
+  <img src="assets/byui_n8n.png" alt="BYU-Idaho n8n" />
 </div>
 
 ## Executive Summary
