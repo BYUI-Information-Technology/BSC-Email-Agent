@@ -134,5 +134,5 @@ The BSC AI Agent pilot demonstrates our capacity to develop and implement sophis
 
 ---
 
-Chat-enabled version below (username and password can be acquired by contacting Ron Vallejo):
+Chat-enabled version below (username and password can be acquired by contacting Ron Vallejo):  
 [Chat with the BSC Agent](https://byui.app.n8n.cloud/webhook/13348d82-88d3-447e-90d4-7b6db9f79280/chat)
