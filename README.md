@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/byui_n8n.png" alt="BYU-Idaho n8n" />
+  <img src="assets/byui-n8n.png" alt="BYU-Idaho n8n" />
 </div>
 
 ## Executive Summary
