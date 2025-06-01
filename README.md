@@ -131,3 +131,8 @@ The BSC AI Agent pilot demonstrates our capacity to develop and implement sophis
 **Strategic Value:** Enterprise implementation positions BYU-Idaho as a leader in educational technology innovation while delivering sustained cost optimization, enhanced student services, and operational excellence that supports our mission to develop disciples of Jesus Christ through accessible, affordable, high-quality education.
 
 **Next Steps:** Initiate enterprise licensing discussions with n8n, develop production deployment timeline, and establish governance frameworks for expanded AI automation across university functions. The proven success of our pilot program provides strong justification for strategic investment in enterprise-grade intelligent automation capabilities.
+
+---
+
+Chat-enabled version below (username and password can be acquired by contacting Ron Vallejo):
+[Chat with the BSC Agent](https://byui.app.n8n.cloud/webhook/13348d82-88d3-447e-90d4-7b6db9f79280/chat)
