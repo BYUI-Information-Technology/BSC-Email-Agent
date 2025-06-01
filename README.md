@@ -18,25 +18,20 @@ Across the automation landscape, we’re seeing a pronounced divide in both phil
 
 On the other hand, companies that doubled down on legacy architectures and took a conservative approach to AI—like TeamDynamix with their iPaaS offering—are experiencing the consequences. By hesitating to embrace generative AI, they’ve missed key windows for innovation and are now finding it increasingly difficult to deliver solutions that meet the evolving expectations of their customers. Legacy systems like iPaaS simply weren’t built with the flexibility or extensibility needed for seamless AI integration, which creates substantial roadblocks for developing modern, automated workflows.
 
-Among the new generation of platforms, n8n particularly stands out. Their deep integration with cutting-edge AI frameworks—specifically, LangChain—enables both advanced automation capabilities and rapid iteration as the AI landscape evolves. This foundational bet on robust, open, and extensible AI technologies is what sets n8n and similar platforms on a clear path toward sustained relevance and success, while legacy solutions risk being left behind.
+Among the new generation of platforms, n8n particularly stands out. Their deep integration with cutting-edge AI frameworks—specifically, LangChain—enables both advanced automation capabilities and rapid iteration as the AI landscape evolves. This foundational bet on robust, open, and extensible AI technologies is what sets n8n and similar platforms on a clear path toward sustained relevance and success, while legacy solutions risk being left behind.  
 
-## Strategic Recommendation  
-
-Instead of being built with TDX iPaaS (from the original proposal), we recommend building the BSC Agent on the n8n platform and the procurement of an enterprise n8n license, enabling university-wide implementation of intelligent automation that supports our mission to serve more students affordably while maintaining high-quality education and spiritual development opportunities.
+Therefore, we recommend building the BSC Agent in n8n instead of being built with TDX iPaaS (from the original proposal) and the procurement of an enterprise n8n license, enabling university-wide implementation of intelligent automation that supports our mission to serve more students affordably while maintaining high-quality education and spiritual development opportunities.
 
 ## Operational Impact and Business Case
 
-### Documented Service Transformation
-
-The pilot addresses critical challenges in university support services, particularly low email satisfaction scores caused by delayed responses and inconsistent information delivery. Current reliance on 25 part-time positions creates recruitment costs, training overhead, scheduling complexities, and variable service quality during peak periods.
+The pilot aims to addresses critical challenges in university support services, particularly low email satisfaction scores caused by delayed responses and inconsistent information delivery. Current reliance on 25 part-time positions creates recruitment costs, training overhead, scheduling complexities, and variable service quality during peak periods.
 
 Automated handling of standard financial aid, registration, and housing inquiries ensures consistent, accurate responses without wait times. Intelligent triage routes complex cases to appropriate human specialists while processing the majority of routine requests automatically, focusing valuable staff time on high-value tasks requiring human judgment and empathy.
 
 ### Measurable Cost Optimization
 
-**Staffing Efficiency:** 60-70% automation of digital channel volume enables significant reduction in part-time positions, delivering savings through:
+**Staffing Efficiency:** the automation of digital channel volume enables significant reduction in part-time positions, delivering savings through:
 - Reduced recruitment and training costs
-- Simplified scheduling and management overhead  
 - Improved service consistency during peak demand periods
 - Enhanced staff focus on complex, high-value interactions
 
@@ -119,25 +114,17 @@ Comprehensive frameworks for ethical decision-making, privacy protection, and hu
 
 Proven governance structures for risk management and quality assurance provide confidence that expanded implementation will enhance rather than compromise institutional objectives and spiritual mission.
 
-### Expansion Roadmap
+### Roadmap
 
-**Phase 1:** Enterprise license procurement and production BSC deployment with enhanced security and scalability features.
+**Phase 1:** Enterprise license procurement for production deployment of BSC Agent for enhanced security and scalability.
 
-**Phase 2:** Academic services expansion including advising support, learning assistance, and student success programs.
+**Phase 2:** Pilot the BSC Agent in n8n, measure performance, monitor and evaluate.
 
-**Phase 3:** Administrative automation across departments including HR, facilities, and research support services.
-
-**Phase 4:** Integration with campus systems for comprehensive workflow automation and data analytics.
-
-### Strategic Leadership Position
-
-Implementation establishes BYU-Idaho as a leader in responsible AI automation within higher education, demonstrating how institutions can leverage advanced technology while maintaining mission alignment and values-based approaches.
-
-Expertise developed through enterprise implementation positions the university to contribute meaningfully to educational technology discussions while serving as a model for thoughtful AI integration in faith-based educational institutions.
+**Phase 3:** Find more use cases for Agentic AI automation across departments including Admissions, Finacial Aid, IT Service Desk, and Academic Advising.
 
 ## Conclusion and Recommendation
 
-The BSC AI Agent pilot successfully demonstrates BYU-Idaho's capacity to develop and implement sophisticated AI automation solutions that deliver measurable operational benefits while advancing our sacred mission. The platform's ability to handle 60-70% of support inquiries automatically while reducing staffing requirements and improving service quality validates the strategic value of intelligent automation technology.
+The BSC AI Agent pilot demonstrates our capacity to develop and implement sophisticated AI automation solutions that deliver measurable operational benefits while advancing our sacred mission. The platform's ability to handle support inquiries automatically while reducing staffing requirements and improving service quality validates the strategic value of intelligent automation technology.
 
 **Primary Recommendation:** Proceed with n8n enterprise license procurement to enable production deployment and university-wide automation expansion. The enterprise platform provides the security, scalability, and advanced capabilities required for comprehensive AI integration across campus operations.
 
