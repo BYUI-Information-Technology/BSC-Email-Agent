@@ -1,7 +1,9 @@
-# BSC-Agent
-## A prototype built by BYU-Idaho using [n8n](https://n8n.io/).
+<div align="center">
 
----
+  <h1>BSC-Agent</h1>
+  <em>A prototype built by BYU-Idaho using <a href="https://n8n.io/">n8n</a>.</em>
+
+</div>
 
 ## Executive Summary
 
