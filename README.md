@@ -2,137 +2,259 @@
   <img src="assets/byui-n8n.png" alt="BYU-Idaho n8n" />
 </div>
 
-## Executive Summary
+## 🎯 Executive Summary
 
-Introducing an intelligent AI automation application that demonstrates solving real-world operational challenges while advancing our sacred mission. The BSC AI Agent pilot showcases how cutting-edge artificial intelligence can reduce administrative burden, optimize resource allocation, and enhance student satisfaction through intelligent agentic automation in the cloud.
+The **BSC Agent** is a pioneering Retrieval-Augmented Generation (RAG) AI system designed to revolutionize student support services at Brigham Young University-Idaho. As the university's inaugural AI project, this system addresses critical challenges in support ticket volume and response quality while maintaining BYU-Idaho's values of Christ-like service and academic excellence.
 
-Built on n8n's professional workflow automation platform with OpenAI's advanced language models, the system is built to handle digital support inquiries automatically while maintaining complete data security through private Azure PostgreSQL storage within BYU-Idaho's tenant environment. The pilot demonstrates measurable operational benefits including elimination of wait times for routine inquiries, significant reduction in part-time staffing requirements, and data-driven service improvements that directly address historically low email satisfaction scores.
+**Current Status**: 🚧 **Pilot Phase** - Proof of concept with stakeholder validation in progress
 
-## Background
+## 📋 Project Overview
 
-This work is the representation of two independent projects occuring in parallel for different use cases, one being an internal IT AI automation project (exlusively piloted with n8n), and the other developed on TeamDynamix iPaaS (legacy low-code BYU-Idaho system) aimed to automate BYU-Idaho's support emails with simple web requests.
+### Problem Statement
 
-The experience developing similar solutions using separate platforms offered an insightful contrast. n8n is purpose-built for developing AI powered automation solutions, while TeamDynamix remains constrained to more simplified worklow automations. The amount of time required to build an AI automation solution in n8n compared to building it in a traditional legacy platform like TDX iPaaS is a stark contrast. TeamDynamix iPaaS is undoubtedly a powerful automation framework, however it wasn't built for AI projects. 
+The BYU‑Idaho Support Center (BSC) currently contends with an overflowing email inbox—far more messages arrive each day than its team of 25 part‑time student agents can feasibly address. This backlog leads to delayed responses and, as recent CSAT surveys confirm, diminished satisfaction characterized by long wait times and inconsistent answers. The manual effort spent triaging and drafting repetitive replies also diverts valuable staff hours away from higher‑value engagements such as real‑time phone or chat support.
 
-Across the automation landscape, we’re seeing a pronounced divide in both philosophy and outcomes. Some vendors—Zapier, Make, and n8n, for example—recognized the growing importance of AI early on and made bold investments in intelligent frameworks. This forward-thinking approach hasn’t just set them apart technically; it’s also positioned them to capture emerging opportunities as demand for AI-driven automation accelerates.
+- **Low email satisfaction scores** due to delayed response times
+- **High operational costs** from managing 25+ part-time positions (estimated > $100,000/year)
+- **Inconsistent information delivery** during peak support periods
+- **Training overhead** and scheduling complexities for student workers
+- **Variable service quality** impacting student experience
 
-On the other hand, companies that doubled down on legacy architectures and took a conservative approach to AI—like TeamDynamix with their iPaaS offering—are experiencing the consequences. By hesitating to embrace generative AI, they’ve missed key windows for innovation and are now finding it increasingly difficult to deliver solutions that meet the evolving expectations of their customers. Legacy systems like iPaaS simply weren’t built with the flexibility or extensibility needed for seamless AI integration, which creates substantial roadblocks for developing modern, automated workflows.
+### Solution
 
-Among the new generation of platforms, n8n particularly stands out. Their deep integration with cutting-edge AI frameworks—specifically, LangChain—enables both advanced automation capabilities and rapid iteration as the AI landscape evolves. This foundational bet on robust, open, and extensible AI technologies is what sets n8n and similar platforms on a clear path toward sustained relevance and success, while legacy solutions risk being left behind.  
+An intelligent AI agent that:
 
-Therefore, we recommend building the BSC Agent in n8n instead of being built with TDX iPaaS (from the original proposal) and the procurement of an enterprise n8n license, enabling university-wide implementation of intelligent automation that supports our mission to serve more students affordably while maintaining high-quality education and spiritual development opportunities.
-
-## Operational Impact and Business Case
-
-The pilot aims to addresses critical challenges in university support services, particularly low email satisfaction scores caused by delayed responses and inconsistent information delivery. Current reliance on 25 part-time positions creates recruitment costs, training overhead, scheduling complexities, and variable service quality during peak periods.
-
-Automated handling of standard financial aid, registration, and housing inquiries ensures consistent, accurate responses without wait times. Intelligent triage routes complex cases to appropriate human specialists while processing the majority of routine requests automatically, focusing valuable staff time on high-value tasks requiring human judgment and empathy.
-
-### Measurable Cost Optimization
-
-**Staffing Efficiency:** the automation of digital channel volume enables significant reduction in part-time positions, delivering savings through:
-- Reduced recruitment and training costs
-- Improved service consistency during peak demand periods
-- Enhanced staff focus on complex, high-value interactions
-
-**24/7 Service Enhancement:** Continuous availability eliminates extended staffing coverage costs while providing superior service quality. Students receive immediate responses to routine questions, removing barriers to academic progress and reducing administrative frustration.
-
-**Data-Driven Optimization:** Comprehensive interaction logging in Azure PostgreSQL generates actionable insights revealing seasonal patterns (e.g., financial aid spikes) that inform proactive resource allocation and policy improvements, creating continuous efficiency gains.
-
-## Technology Platform and Architecture
-
-### Intelligent Agentic Framework
-
-The platform utilizes **n8n cloud professional** as the core workflow orchestration engine, providing enterprise-grade automation capabilities that coordinate complex interactions between AI processing, knowledge retrieval, and university systems. This intelligent agentic approach enables autonomous decision-making about tool selection, information synthesis, and appropriate escalation pathways.
-
-**OpenAI Integration:** Advanced language models via secure API provide sophisticated natural language understanding and generation, enabling human-like comprehension and contextually appropriate responses that reflect university values and communication standards.
-
-**Autonomous Tool Selection:** The agent intelligently selects from multiple specialized tools including knowledge base retrieval, academic calendar lookup, web search, escalation workflows, and reasoning capabilities based on inquiry context and complexity.
-
-### Enterprise Security and Data Management
-
-**Private Cloud Infrastructure:** All operational data resides within BYU-Idaho's private Azure PostgreSQL tenant, ensuring complete institutional control over sensitive information while maintaining enterprise-grade security, scalability, and compliance capabilities.
-
-**Comprehensive Audit Trails:** Every interaction generates detailed logs supporting regulatory compliance (FERPA), quality assurance evaluation, and continuous improvement analytics while protecting student privacy through secure, on-premises data management.
-
-**Multi-Layer Security:** Integration architecture incorporates encrypted data transmission, secure database storage, comprehensive access logging, and regular security assessments that meet institutional cybersecurity standards.
-
-## Mission Alignment and Strategic Value
-
-### Developing Disciples Through Enhanced Support
-
-Automation of routine tasks enables staff to focus on relationship building, mentoring, and spiritual guidance that foster Christian character development. The system embeds gospel principles through consistently patient, helpful responses that create a wholesome support environment reflecting Christ-like service.
-
-24/7 availability supports students balancing work, family, and educational responsibilities, recognizing that learning occurs beyond business hours and enabling development as leaders in homes while pursuing academic goals.
-
-### Serving More Students Affordably
-
-Intelligent automation directly supports the mission to serve maximum students within resource constraints. Unlimited simultaneous inquiry handling without proportional staff increases demonstrates how technology can expand institutional capacity while maintaining service quality and affordability.
-
-Cost efficiencies through automation enable continued affordable tuition while enhancing service breadth and quality, supporting long-term sustainability of the university's distinctive educational approach.
-
-### Quality Education Through Innovation
-
-Enhanced information access enables better-informed student decisions about academic planning, maximizing learning opportunities and success outcomes. Personalized guidance accommodates diverse learning styles and backgrounds, reflecting commitment to serving students with varying interests and abilities.
-
-Technology amplifies rather than replaces human expertise, creating more opportunities for meaningful faculty-student interaction and mentoring that define high-quality BYU-Idaho education.
-
-## Platform Scalability and Enterprise Implementation
-
-### Current Pilot Configuration
-
-**n8n Cloud Professional Team License:** Provides robust workflow automation capabilities suitable for pilot testing and initial deployment across BSC operations.
-
-**Demonstrated Capabilities:** Successful handling of complex multi-step support processes, integration with university knowledge systems, intelligent escalation protocols, and comprehensive quality assurance frameworks.
-
-**Proven ROI:** Measurable improvements in response times, service consistency, cost efficiency, and student satisfaction demonstrate platform value and implementation readiness.
-
-### Enterprise Production Proposal
-
-**n8n Enterprise License Recommendation:** Production deployment requires enterprise-grade capabilities including:
-- Enhanced security features for sensitive university data
-- Advanced workflow complexity for campus-wide implementation
-- Unlimited automation capacity for university-scale operations
-- Enterprise support and service level agreements
-- Advanced analytics and reporting capabilities
-- Multi-department integration and governance features
-
-**University-Wide Implementation Potential:** Proven architecture and methodologies can extend beyond BSC to:
-- Academic advising automation and triage
-- Student services workflow optimization
-- Administrative process automation
-- Research support and assistance
-- Faculty and staff service enhancement
-
-**Strategic Investment Value:** Enterprise licensing enables comprehensive AI automation strategy supporting institutional growth, operational excellence, and mission advancement through technology stewardship.
-
-## Implementation Framework and Future Applications
-
-### Responsible Development Methodology
-
-Comprehensive frameworks for ethical decision-making, privacy protection, and human oversight ensure AI technology serves rather than conflicts with university values. Continuous evaluation across technical accuracy, mission alignment, and unintended consequences maintains institutional integrity.
-
-Proven governance structures for risk management and quality assurance provide confidence that expanded implementation will enhance rather than compromise institutional objectives and spiritual mission.
-
-### Roadmap
-
-**Phase 1:** Enterprise license procurement for production deployment of BSC Agent for enhanced security and scalability.
-
-**Phase 2:** Pilot the BSC Agent in n8n, measure performance, monitor and evaluate.
-
-**Phase 3:** Find more use cases for Agentic AI automation across departments including Admissions, Finacial Aid, IT Service Desk, and Academic Advising.
-
-## Conclusion and Recommendation
-
-The BSC AI Agent pilot demonstrates our capacity to develop and implement sophisticated AI automation solutions that deliver measurable operational benefits while advancing our sacred mission. The platform's ability to handle support inquiries automatically while reducing staffing requirements and improving service quality validates the strategic value of intelligent automation technology.
-
-**Primary Recommendation:** Proceed with n8n enterprise license procurement to enable production deployment and university-wide automation expansion. The enterprise platform provides the security, scalability, and advanced capabilities required for comprehensive AI integration across campus operations.
-
-**Strategic Value:** Enterprise implementation positions BYU-Idaho as a leader in educational technology innovation while delivering sustained cost optimization, enhanced student services, and operational excellence that supports our mission to develop disciples of Jesus Christ through accessible, affordable, high-quality education.
-
-**Next Steps:** Initiate enterprise licensing discussions with n8n, develop production deployment timeline, and establish governance frameworks for expanded AI automation across university functions. The proven success of our pilot program provides strong justification for strategic investment in enterprise-grade intelligent automation capabilities.
+1. **Automatically processes** incoming student support emails
+2. **Searches knowledge base** using semantic search upon the existing BSC knowledge base (from Genesys Cloud, vectorized with OpenAI's embedding model, stored in Pinecone)
+3. **Generates contextual responses** grounded in official BYU-Idaho policies
+4. **Maintains human oversight** through approval workflows
+5. **Ensures compliance** with FERPA and institutional values
 
 ---
 
-Chat-enabled version below (username and password can be acquired by contacting Ron Vallejo):  
-[Chat with the BSC Agent](https://byui.app.n8n.cloud/webhook/13348d82-88d3-447e-90d4-7b6db9f79280/chat)
+## 🏗️ Technical Architecture
+
+### Core Components
+
+```mermaid
+graph TD
+    A[Email Input] --> B[Data Processing]
+    B --> C[AI Agent Core]
+    C --> D[Knowledge Base Search]
+    C --> E[Academic Calendar]
+    C --> F[Web Search]
+    C --> G[Response Generation]
+    G --> H[Human Review]
+    H --> I[Response Delivery]
+
+    J[PostgreSQL] --> K[Conversation Logging]
+    J --> L[Evaluation Metrics]
+```
+
+### Technology Stack
+
+| Component               | Technology                       | Source                          | Status    |
+| ----------------------- | -------------------------------- | ------------------------------- | --------- |
+| **Agent Platform**      | n8n                              | `https://byui.app.n8n.cloud/`   | 🟡 Pilot  |
+| **Language Model**      | OpenAI `GPT-4.1`                 | `https://platform.openai.com/`  | ✅ Active |
+| **Embedding Model**     | OpenAI `text-embedding-3-large`  | `https://platform.openai.com/`  | ✅ Active |
+| **Vector Database**     | Pinecone                         | `https://app.pinecone.io/`      | 🟡 Pilot  |
+| **Database**            | Azure PostgreSQL Flexible Server | `https://portal.azure.com/`     | ✅ Active |
+| **Evaluation Platform** | Label Studio                     | `https://app.humansignal.com/`  | 🟡 Pilot  |
+| **Knowledge Base**      | Genesys Cloud                    | `https://apps.usw2.pure.cloud/` | ✅ Active |
+
+### System Projects
+
+- n8n: `BSC Agent`
+- OpenAI Platform: `BSC Agent`
+- Pinecone: `AI Agents` (index: `bsc-knowledge`)
+- Azure PostgreSQL Flexible Server: `byui-gospel-library-db`
+- Label Studio: `BSC Agent`
+
+### Key Features
+
+#### 🤖 Agent Capabilities
+
+- **Multi-tool Integration**: Knowledge base, academic calendar, web search, escalation
+- **Contextual Memory**: Conversation tracking and context retention
+- **Escalation Logic**: Automatic handoff for complex cases (e.g. safety emergencies, policy violations, sensitive matters)
+- **Values Alignment**: Built-in BYU-Idaho mission and values integration
+
+#### 🛡️ Safety & Compliance
+
+- **FERPA Compliant**: Privacy protection for student records
+- **Escalation Protocols**: Safety emergencies, policy violations, sensitive matters
+- **Human Oversight**: Multi-stage approval process
+- **Audit Trail**: Complete conversation logging and evaluation
+
+#### 📊 Evaluation Framework
+
+- **Conversation Quality**: Completeness, accuracy, relevance, clarity
+- **Support Metrics**: Empathy, actionability, context handling
+- **Values Alignment**: Spiritual uplift, honor code compliance, service orientation
+- **Safety Metrics**: Policy compliance, privacy preservation, resilience testing
+
+---
+
+## 🔄 Workflow Process
+
+### Automated Pipeline
+
+1. **Input Processing**
+
+   - Form-based testing interface with BYU-Idaho branding
+   - Email metadata capture (from, subject, body)
+   - Conversation UUID generation
+
+2. **AI Processing**
+
+   - System prompt with institutional context
+   - Multi-tool search and retrieval
+   - Response generation with values alignment
+   - Intermediate step logging
+
+3. **Human Review**
+
+   - Side-by-side comparison display
+   - Three-option approval workflow:
+     - ✅ Approve & Send Response
+     - 🔄 Send Back for Revisions
+     - ❌ Reject
+   - Revision integration with feedback incorporation
+
+4. **Data Management**
+   - Conversation storage for analysis
+   - Evaluation metrics collection
+   - Performance tracking and optimization
+
+---
+
+## 👥 Project Team & Governance
+
+| Role                | Name         | Responsibility                                      |
+| ------------------- | ------------ | --------------------------------------------------- |
+| **Project Sponsor** | Karl Karstad | BSC Director, Primary Stakeholder                   |
+| **Project Manager** | Brian Schow  | Project Coordination, Stakeholder                   |
+| **AI Engineer**     | Ron Vallejo  | Technical Development, Architecture, Implementation |
+| **AI Governance**   | Sid Palmer   | Governance, Oversight, and Compliance               |
+
+### Governance & Oversight
+
+- **CES Data Privacy & AI Governance**
+- **BYU-Idaho Gen AI Council**
+- **BYU-Idaho IT Project & Portfolio Management Council**
+
+---
+
+## 🚀 Current Status & Milestones
+
+### ✅ Completed
+
+- [x] Technical architecture design
+- [x] n8n workflow prototype development
+- [x] Multi-tool integration (knowledge base, calendar, web search)
+- [x] PostgreSQL data management system
+- [x] Values-aligned system prompt engineering
+
+### 🔄 In Progress
+
+- [ ] Automated learning loop for BSC Agent (n8n, Pinecone, Genesys)
+- [ ] Human review workflow implementation
+- [ ] Comprehensive evaluation framework
+- [ ] Stakeholder validation and feedback incorporation
+- [ ] Enterprise tool licensing acquisition (n8n, Pinecone, Label Studio)
+- [ ] Production environment setup
+- [ ] Security and compliance review
+
+### 🎯 Upcoming
+
+- [ ] Production deployment planning
+- [ ] Staff training and change management
+- [ ] Performance monitoring dashboard
+- [ ] Continuous improvement framework
+
+---
+
+### Prerequisites
+
+- n8n workflow platform access
+- OpenAI API credentials
+- Pinecone vector database account
+- Azure PostgreSQL Flexible Server
+- Label Studio instance
+
+### Configuration Files
+
+- `BSC_Agent__Email_.json` - Main n8n workflow definition
+- Database schemas for conversation logging and evaluation
+
+### Dependencies/Variables
+
+```bash
+# OpenAI Configuration
+OPENAI_MODEL=gpt-4.1
+OPENAI_EMBEDDING_MODEL=text-embedding-3-large
+
+# Database Configuration
+POSTGRES_DB=bsc_agent
+GENESYS_KNOWLEDGE_BASE_ID=
+
+# Vector Database
+PINECONE_INDEX=bsc-knowledge
+```
+
+---
+
+## 📈 Expected Impact
+
+### Operational Benefits
+
+- **Response Time**: Reduction from hours to minutes
+- **Consistency**: Standardized, policy-compliant responses
+- **Cost Efficiency**: Reduced reliance on part-time staffing
+- **Scalability**: Handle peak periods without service degradation
+
+### Educational Alignment
+
+- **Values Integration**: Christ-like service embedded in every interaction
+- **Mission Support**: Advancing BYU-Idaho's educational mission
+- **Student Success**: Improved support experience and satisfaction
+
+---
+
+## 🔬 Research & Development
+
+This project represents BYU-Idaho's entry into institutional AI deployment, serving as:
+
+- **Proof of Concept** for AI in university operations
+- **Learning Laboratory** for AI governance and best practices
+- **Foundation** for future AI initiatives across campus
+- **Case Study** for values-aligned AI development in higher education
+
+---
+
+## 📞 Contact & Support
+
+**Developer**: Ron Vallejo, AI Engineer  
+**Email**: [vallejor@byui.edu](mailto:vallejor@byui.edu)  
+**Project Repository**: [Github | BYUI-Information-Technology / BSC-Agent](https://github.com/BYUI-Information-Technology/BSC-Agent)
+
+**Stakeholders**:
+
+- Brian Schow, Project Manager
+- Karl Karstad, BSC Director
+
+---
+
+## 📄 License & Compliance
+
+This project operates under BYU-Idaho's institutional policies and Church Educational System guidelines. All AI implementations must comply with:
+
+- FERPA privacy requirements
+- CES data governance policies
+- BYU-Idaho academic integrity standards
+- Institutional values and mission alignment
+
+---
+
+_This document represents BYU-Idaho's commitment to responsible AI development and deployment in service of student success and institutional mission._
