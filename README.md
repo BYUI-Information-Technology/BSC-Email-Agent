@@ -2,24 +2,11 @@
   <img src="assets/byui-n8n.png" alt="BYU-Idaho n8n" />
 </div>
 
-# BSC Agent
+**Current Status**: 🚧 **Pilot Phase**
 
 ## 🎯 Executive Summary
 
 The **BSC Agent** is a pioneering Retrieval-Augmented Generation (RAG) AI system designed to revolutionize student support services at Brigham Young University-Idaho. As the university's inaugural AI project, this system addresses critical challenges in support ticket volume and response quality while maintaining BYU-Idaho's values of Christ-like service and academic excellence.
-
-**Current Status**: 🚧 **Pilot Phase** - Proof of concept with stakeholder validation in progress
-
-## 📋 Problem Statement
-
-The BYU-Idaho Support Center (BSC) faces significant operational challenges:
-
-- **Low email satisfaction scores** due to delayed response times
-- **High operational costs** from managing 25+ part-time positions
-- **Inconsistent information delivery** during peak support periods
-- **Training overhead** and scheduling complexities for student workers
-
----
 
 ## 📋 Project Overview
 
@@ -44,8 +31,6 @@ An intelligent AI agent that:
 3. **Generates contextual responses** grounded in official BYU-Idaho policies
 4. **Maintains human oversight** through approval workflows
 5. **Ensures compliance** with FERPA and institutional values
-
----
 
 ## 🏗️ Technical Architecture
 
@@ -109,8 +94,6 @@ graph TD
 - **Values Alignment**: Spiritual uplift, honor code compliance, service orientation
 - **Safety Metrics**: Policy compliance, privacy preservation, resilience testing
 
----
-
 ## 🔄 Workflow Process
 
 ### Automated Pipeline
@@ -142,8 +125,6 @@ graph TD
    - Evaluation metrics collection
    - Performance tracking and optimization
 
----
-
 ## 👥 Project Team & Governance
 
 | Role                | Name         | Responsibility                                      |
@@ -158,8 +139,6 @@ graph TD
 - **CES Data Privacy & AI Governance**
 - **BYU-Idaho Gen AI Council**
 - **BYU-Idaho IT Project & Portfolio Management Council**
-
----
 
 ## 🚀 Current Status & Milestones
 
@@ -187,8 +166,6 @@ graph TD
 - [ ] Staff training and change management
 - [ ] Performance monitoring dashboard
 - [ ] Continuous improvement framework
-
----
 
 ### Prerequisites
 
@@ -218,8 +195,6 @@ GENESYS_KNOWLEDGE_BASE_ID=
 PINECONE_INDEX=bsc-knowledge
 ```
 
----
-
 ## 📈 Expected Impact
 
 ### Operational Benefits
@@ -235,8 +210,6 @@ PINECONE_INDEX=bsc-knowledge
 - **Mission Support**: Advancing BYU-Idaho's educational mission
 - **Student Success**: Improved support experience and satisfaction
 
----
-
 ## 🔬 Research & Development
 
 This project represents BYU-Idaho's entry into institutional AI deployment, serving as:
@@ -245,8 +218,6 @@ This project represents BYU-Idaho's entry into institutional AI deployment, serv
 - **Learning Laboratory** for AI governance and best practices
 - **Foundation** for future AI initiatives across campus
 - **Case Study** for values-aligned AI development in higher education
-
----
 
 ## 📞 Contact & Support
 
@@ -258,8 +229,6 @@ This project represents BYU-Idaho's entry into institutional AI deployment, serv
 
 - Brian Schow, Project Manager
 - Karl Karstad, BSC Director
-
----
 
 ## 📄 License & Compliance
 
