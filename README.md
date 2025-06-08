@@ -4,6 +4,36 @@
 
 **Current Status**: 🚧 **Pilot Phase**
 
+**Table of Contents**
+
+- [Executive Summary](#-executive-summary)
+- [Project Overview](#-project-overview)
+  - [Problem Statement](#problem-statement)
+  - [Solution](#solution)
+- [Technical Architecture](#️-technical-architecture)
+  - [Core Components](#core-components)
+  - [Technology Stack](#technology-stack)
+  - [System Projects](#system-projects)
+  - [Key Features](#key-features)
+- [Workflow Process](#-workflow-process)
+  - [Automated Pipeline](#automated-pipeline)
+- [Project Status & Milestones](#-project-status--milestones)
+- [Getting Started](#-getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Configuration](#configuration)
+  - [Environment Variables](#environment-variables)
+- [Expected Impact](#-expected-impact)
+  - [Operational Benefits](#operational-benefits)
+  - [Educational Alignment](#educational-alignment)
+- [Project Team & Governance](#-project-team--governance)
+  - [Team Roles](#team-roles)
+  - [Governance & Oversight](#governance--oversight)
+- [Research & Development](#-research--development)
+- [Contact & Support](#-contact--support)
+- [License & Compliance](#-license--compliance)
+
+---
+
 ## 🎯 Executive Summary
 
 The **BSC Agent** is a pioneering Retrieval-Augmented Generation (RAG) AI system designed to revolutionize student support services at Brigham Young University-Idaho. As the university's inaugural AI project, this system addresses critical challenges in support ticket volume and response quality while maintaining BYU-Idaho's values of Christ-like service and academic excellence.
@@ -14,8 +44,7 @@ The **BSC Agent** is a pioneering Retrieval-Augmented Generation (RAG) AI system
 
 The BYU‑Idaho Support Center (BSC) currently contends with an overflowing email inbox—far more messages arrive each day than its team of 25 part‑time student agents can feasibly address. This backlog leads to delayed responses and, as recent CSAT surveys confirm, diminished satisfaction characterized by long wait times and inconsistent answers. The manual effort spent triaging and drafting repetitive replies also diverts valuable staff hours away from higher‑value engagements such as real‑time phone or chat support.
 
-The BYU-Idaho Support Center (BSC) faces significant operational challenges:
-
+**Key Challenges:**
 - **Low email satisfaction scores** due to delayed response times
 - **High operational costs** from managing 25+ part-time positions (estimated > $100,000/year)
 - **Inconsistent information delivery** during peak support periods
@@ -65,11 +94,11 @@ graph TD
 
 ### System Projects
 
-- n8n: `BSC Agent`
-- OpenAI Platform: `BSC Agent`
-- Pinecone: `AI Agents` (index: `bsc-knowledge`)
-- Azure PostgreSQL Flexible Server: `byui-gospel-library-db`
-- Label Studio: `BSC Agent`
+- **n8n**: `BSC Agent`
+- **OpenAI Platform**: `BSC Agent`
+- **Pinecone**: `AI Agents` (index: `bsc-knowledge`)
+- **Azure PostgreSQL Flexible Server**: `byui-gospel-library-db`
+- **Label Studio**: `BSC Agent`
 
 ### Key Features
 
@@ -99,20 +128,17 @@ graph TD
 ### Automated Pipeline
 
 1. **Input Processing**
-
    - Form-based testing interface with BYU-Idaho branding
    - Email metadata capture (from, subject, body)
    - Conversation UUID generation
 
 2. **AI Processing**
-
    - System prompt with institutional context
    - Multi-tool search and retrieval
    - Response generation with values alignment
    - Intermediate step logging
 
 3. **Human Review**
-
    - Side-by-side comparison display
    - Three-option approval workflow:
      - ✅ Approve & Send Response
@@ -125,22 +151,7 @@ graph TD
    - Evaluation metrics collection
    - Performance tracking and optimization
 
-## 👥 Project Team & Governance
-
-| Role                | Name         | Responsibility                                      |
-| ------------------- | ------------ | --------------------------------------------------- |
-| **Project Sponsor** | Karl Karstad | BSC Director, Primary Stakeholder                   |
-| **Project Manager** | Brian Schow  | Project Coordination, Stakeholder                   |
-| **AI Engineer**     | Ron Vallejo  | Technical Development, Architecture, Implementation |
-| **AI Governance**   | Sid Palmer   | Governance, Oversight, and Compliance               |
-
-### Governance & Oversight
-
-- **CES Data Privacy & AI Governance**
-- **BYU-Idaho Gen AI Council**
-- **BYU-Idaho IT Project & Portfolio Management Council**
-
-## 🚀 Current Status & Milestones
+## 🚀 Project Status & Milestones
 
 ### ✅ Completed
 
@@ -167,6 +178,8 @@ graph TD
 - [ ] Performance monitoring dashboard
 - [ ] Continuous improvement framework
 
+## 🚀 Getting Started
+
 ### Prerequisites
 
 - n8n workflow platform access
@@ -175,12 +188,13 @@ graph TD
 - Azure PostgreSQL Flexible Server
 - Label Studio instance
 
-### Configuration Files
+### Configuration
 
-- `BSC_Agent__Email_.json` - Main n8n workflow definition
-- Database schemas for conversation logging and evaluation
+**Primary Workflow**: `BSC_Agent__Email_.json` - Main n8n workflow definition
 
-### Dependencies/Variables
+**Database Schemas**: Conversation logging and evaluation tables
+
+### Environment Variables
 
 ```bash
 # OpenAI Configuration
@@ -210,6 +224,23 @@ PINECONE_INDEX=bsc-knowledge
 - **Mission Support**: Advancing BYU-Idaho's educational mission
 - **Student Success**: Improved support experience and satisfaction
 
+## 👥 Project Team & Governance
+
+### Team Roles
+
+| Role                | Name         | Responsibility                                      |
+| ------------------- | ------------ | --------------------------------------------------- |
+| **Project Sponsor** | Karl Karstad | BSC Director, Primary Stakeholder                   |
+| **Project Manager** | Brian Schow  | Project Coordination, Stakeholder                   |
+| **AI Engineer**     | Ron Vallejo  | Technical Development, Architecture, Implementation |
+| **AI Governance**   | Sid Palmer   | Governance, Oversight, and Compliance               |
+
+### Governance & Oversight
+
+- **CES Data Privacy & AI Governance**
+- **BYU-Idaho Gen AI Council**
+- **BYU-Idaho IT Project & Portfolio Management Council**
+
 ## 🔬 Research & Development
 
 This project represents BYU-Idaho's entry into institutional AI deployment, serving as:
@@ -226,7 +257,6 @@ This project represents BYU-Idaho's entry into institutional AI deployment, serv
 **Project Repository**: [Github | BYUI-Information-Technology / BSC-Agent](https://github.com/BYUI-Information-Technology/BSC-Agent)
 
 **Stakeholders**:
-
 - Brian Schow, Project Manager
 - Karl Karstad, BSC Director
 
