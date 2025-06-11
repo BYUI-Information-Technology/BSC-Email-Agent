@@ -1,37 +1,38 @@
-# Research Summary: How to Prompt AI Agents
 
-## 1. Best Practices
-- **Clarity & Specificity:** Use concise, unambiguous language; define the task, audience, format, and constraints.
-- **Latest Models:** Leverage the most capable model versions for improved understanding and responses.
-- **Structured Instructions:** Use numbered or bulleted steps for complex tasks.
-- **Role & Persona:** Assign a clear role (e.g., “You are an expert developer”) to set tone and style.
-- **Context & Examples:** Provide necessary background and sample inputs/outputs.
-- **Iteration & Refinement:** Test prompts, review outputs, and iteratively refine until desired behavior emerges.
-- **Verification:** Ask the agent to self-verify or check its answers for consistency and correctness.
+## Research: Prompting AI Agents (2024)
 
-## 2. Prompting Frameworks
-- **Zero-Shot:** Task definition only; relies on model’s pre-trained knowledge.
-- **Few-Shot:** Include a handful of examples in the prompt to illustrate the expected format/quality.
-- **Chain-of-Thought (CoT):** Instruct the model to “think step-by-step,” revealing its intermediate reasoning.
-- **Few-Shot CoT:** Combine examples with step-by-step solutions to guide reasoning.
-- **Role Prompting:** Explicitly define an agent’s role or persona to control voice and expertise.
-- **Output Formatting:** Specify desired response structure (e.g., JSON schema, tables).
-- **Multi-Agent Coordination:** Use specialized frameworks (LangGraph, CrewAI, Microsoft Autogen, Agno, Langflow) to define roles, handoffs, and tool integrations among multiple agents.
+### 1. Best Practices for Prompting AI Agents
+- **Clarity & Specificity:** For BSC Agent prompt templates, use concise, unambiguous language; specify the task, audience (BYU-Idaho staff/students), output format (e.g., JSON, summary, or direct instruction), and any relevant constraints (e.g., FERPA compliance, academic tone).
+- **Latest Models:** Ensure the BSC Agent leverages the most capable model version available in the stack (e.g., OpenAI GPT-4, text-embedding-3-large for context).
+- **Structured Instructions:** For multi-step tasks (e.g., email triage, scheduling), use numbered or bulleted steps in prompts to guide reasoning.
+- **Role & Persona:** Always define the agent's persona (e.g., “You are a BYU-Idaho support agent with expertise in academic policy”) to ensure appropriate tone and depth.
+- **Context & Examples:** Include background (e.g., BYU-Idaho academic policies) and sample input/output pairs in prompt templates for higher accuracy.
+- **Iteration & Refinement:** Test and review prompt outputs, updating templates as needed for better performance in student/staff scenarios.
+- **Verification:** Instruct BSC Agent to self-verify outputs (e.g., “Double-check that your answer aligns with BYU-Idaho policy and is consistent with FERPA regulations.”)
 
-## 3. Common Pitfalls & Mitigations
-- **Ambiguity:** Leads to vague or off-target outputs. Avoid by providing specific instructions, context, and examples.
-- **Overly Long Prompts:** Can overwhelm or confuse. Keep prompts focused; offload details to external documents if needed.
-- **Prompt Injection:** Malicious or accidental inclusion of unwanted instructions. Mitigate with input sanitization, instruction shielding (delimiters), and explicit “ignore earlier instructions” clauses.
-- **Overfitting to Examples:** Few-shot examples too narrow can limit creativity. Balance specificity with generality.
-- **Ignoring Model Limits:** Asking for out-of-scope tasks. Understand model capabilities and provide realistic tasks.
-- **Inadequate Testing:** Skip iterative loops and error-checking. Always review outputs, flag inconsistencies, and refine prompts.
+### 2. Prompting Frameworks for BSC Agent
+- **Zero-Shot:** Use for simple, direct queries where the agent relies on pre-trained knowledge (e.g., “What is the process for transcript requests?”)
+- **Few-Shot:** Embed a set of real BYU-Idaho support examples to clarify expected outputs (e.g., example student emails and corresponding responses).
+- **Chain-of-Thought (CoT):** Add instructions like “Think step-by-step before answering” to improve reasoning in complex scenarios (e.g., solving a financial aid problem).
+- **Few-Shot CoT:** Combine BYU-Idaho-specific examples with stepwise solutions in the prompt.
+- **Role Prompting:** Set the agent persona to match roles (e.g., Registrar, Financial Aid Advisor) for multi-agent workflows.
+- **Output Formatting:** Specify output formats (e.g., table of steps, JSON record) in prompts for downstream integration.
+- **Multi-Agent Coordination:** Use or explore frameworks (LangGraph, CrewAI, Microsoft Autogen, Agno, Langflow) to define specialized agent roles and handoffs (e.g., Researcher, Analyst, Validator in the BSC Agent pipeline).
 
-## 4. Multi-Agent Best Practices
-- **Agent Specialization:** Assign distinct roles/tasks for each agent (e.g., Researcher, Analyst, Validator).
-- **Clear Handoff Protocols:** Define how outputs from one agent become inputs to another.
-- **Tool Integration:** Equip agents with relevant APIs or modules (web search, code execution, databases).
-- **Performance Monitoring:** Track agent outputs and iterate prompt templates or topologies for better coordination.
-- **Frameworks:** KaibanJS (Hugging Face), LangGraph, CrewAI, Microsoft Autogen, Agno, OpenAI Swarm.
+### 3. Common Pitfalls & Mitigations (BSC Agent Context)
+- **Ambiguity:** Avoid vague instructions; always provide specific context (e.g., which policy is in scope, who the audience is).
+- **Overly Long Prompts:** Keep BSC Agent prompts focused; move detailed context to knowledge base references if needed.
+- **Prompt Injection:** Sanitize student/staff inputs, use delimiters, and instruct the agent to ignore extraneous instructions.
+- **Overfitting to Examples:** Ensure prompt examples are representative of the full range of BSC support cases (not just edge cases).
+- **Ignoring Model Limits:** Do not ask the BSC Agent to perform tasks outside its training or access (e.g., legal advice, HIPAA information).
+- **Inadequate Testing:** Always review outputs in pilot runs, flag inconsistencies, and refine prompts per user feedback.
+
+### 4. Multi-Agent Best Practices for BSC Agent
+- **Agent Specialization:** Assign distinct roles (e.g., Email Triage, Policy Lookup, Response Generator, Human Validator).
+- **Clear Handoff Protocols:** Define, in prompt and code, how outputs from one agent become structured inputs for the next.
+- **Tool Integration:** Integrate APIs (e.g., BYU-Idaho knowledge base, calendar, student records) where possible.
+- **Performance Monitoring:** Track agent outputs and update prompt templates to improve workflow quality and compliance.
+- **Frameworks:** Continue evaluating LangGraph, CrewAI, and others for robust orchestration of BSC Agent roles.
 
 ### References
 - OpenAI Prompt Engineering Guide
@@ -39,6 +40,9 @@
 - Forbes: Advanced Multi-Agent Prompting
 - KaibanJS Multi-Agent Prompt Engineering
 
----
+**Next Steps:**
+- Experiment with tailored prompt templates for BSC cases.
+- Test with real BYU-Idaho support scenarios.
+- Iterate based on empirical performance and staff/student feedback.
 
-**Next Steps:** Experiment with tailored prompts on your chosen AI platform, incorporate these practices, and iterate based on empirical performance.
+---
