@@ -89,16 +89,13 @@ graph TD
 | **Embedding Model**     | OpenAI `text-embedding-3-large`  | `https://platform.openai.com/`  | ✅ Active |
 | **Vector Database**     | Pinecone                         | `https://app.pinecone.io/`      | 🟡 Pilot  |
 | **Database**            | Azure PostgreSQL Flexible Server | `https://portal.azure.com/`     | ✅ Active |
-| **Evaluation Platform** | Label Studio                     | `https://app.humansignal.com/`  | 🟡 Pilot  |
 | **Knowledge Base**      | Genesys Cloud                    | `https://apps.usw2.pure.cloud/` | ✅ Active |
 
 ### System Projects
 
 - **n8n**: `BSC Agent`
 - **OpenAI Platform**: `BSC Agent`
-- **Pinecone**: `AI Agents` (index: `bsc-knowledge`)
-- **Azure PostgreSQL Flexible Server**: `byui-gospel-library-db`
-- **Label Studio**: `BSC Agent`
+- **Pinecone**: `AI Agents` (index: `bsc-knowledge-v2`)
 
 ### Key Features
 
@@ -193,21 +190,6 @@ graph TD
 **Primary Workflow**: `BSC_Agent__Email_.json` - Main n8n workflow definition
 
 **Database Schemas**: Conversation logging and evaluation tables
-
-### Environment Variables
-
-```bash
-# OpenAI Configuration
-OPENAI_MODEL=gpt-4.1
-OPENAI_EMBEDDING_MODEL=text-embedding-3-large
-
-# Database Configuration
-POSTGRES_DB=bsc_agent
-GENESYS_KNOWLEDGE_BASE_ID=
-
-# Vector Database
-PINECONE_INDEX=bsc-knowledge
-```
 
 ## 📈 Expected Impact
 
