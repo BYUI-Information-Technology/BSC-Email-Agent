@@ -4,36 +4,6 @@
 
 **Current Status**: 🚧 **Pilot Phase**
 
-**Table of Contents**
-
-- [Executive Summary](#-executive-summary)
-- [Project Overview](#-project-overview)
-  - [Problem Statement](#problem-statement)
-  - [Solution](#solution)
-- [Technical Architecture](#️-technical-architecture)
-  - [Core Components](#core-components)
-  - [Technology Stack](#technology-stack)
-  - [System Projects](#system-projects)
-  - [Key Features](#key-features)
-- [Workflow Process](#-workflow-process)
-  - [Automated Pipeline](#automated-pipeline)
-- [Project Status & Milestones](#-project-status--milestones)
-- [Getting Started](#-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Configuration](#configuration)
-  - [Environment Variables](#environment-variables)
-- [Expected Impact](#-expected-impact)
-  - [Operational Benefits](#operational-benefits)
-  - [Educational Alignment](#educational-alignment)
-- [Project Team & Governance](#-project-team--governance)
-  - [Team Roles](#team-roles)
-  - [Governance & Oversight](#governance--oversight)
-- [Research & Development](#-research--development)
-- [Contact & Support](#-contact--support)
-- [License & Compliance](#-license--compliance)
-
----
-
 ## 🎯 Executive Summary
 
 The **BSC Agent** is a pioneering Retrieval-Augmented Generation (RAG) AI system designed to revolutionize student support services at Brigham Young University-Idaho. As the university's inaugural AI project, this system addresses critical challenges in support ticket volume and response quality while maintaining BYU-Idaho's values of Christ-like service and academic excellence.
