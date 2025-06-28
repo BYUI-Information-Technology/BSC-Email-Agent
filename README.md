@@ -63,7 +63,8 @@ graph TD
 
 ### System Projects
 
-- **n8n**: `BSC Agent`
+- **n8n Flow**: `Email Agent`
+- **n8n Flow ID**: `8Fi9AUexVzJze7tl`
 - **OpenAI Platform**: `BSC Agent`
 - **Pinecone**: `AI Agents` (index: `bsc-knowledge-v2`)
 
@@ -72,51 +73,8 @@ graph TD
 #### 🤖 Intelligent Agent Capabilities
 
 - **Multi-tool Integration**: Knowledge base, academic calendar, web search, escalation
-- **Contextual Memory**: Conversation tracking and context retention
-- **Escalation Logic**: Automatic handoff for complex cases (e.g. safety emergencies, policy violations, sensitive matters)
-- **Values Alignment**: Built-in BYU-Idaho mission and values integration
-
-#### 🛡️ Safety & Compliance
-
-- **FERPA Compliant**: Privacy protection for student records
-- **Escalation Protocols**: Safety emergencies, policy violations, sensitive matters
-- **Human Oversight**: Multi-stage approval process
-- **Audit Trail**: Complete conversation logging and evaluation
-
-#### 📊 Evaluation Framework
-
-- **Conversation Quality**: Completeness, accuracy, relevance, clarity
-- **Support Metrics**: Empathy, actionability, context handling
-- **Values Alignment**: Spiritual uplift, honor code compliance, service orientation
-- **Safety Metrics**: Policy compliance, privacy preservation, resilience testing
-
-## 🔄 Workflow Process
-
-### Automated Pipeline
-
-1. **Input Processing**
-   - Form-based testing interface with BYU-Idaho branding
-   - Email metadata capture (from, subject, body)
-   - Conversation UUID generation
-
-2. **AI Processing**
-   - System prompt with institutional context
-   - Multi-tool search and retrieval
-   - Response generation with values alignment
-   - Intermediate step logging
-
-3. **Human Review**
-   - Side-by-side comparison display
-   - Three-option approval workflow:
-     - ✅ Approve & Send Response
-     - 🔄 Send Back for Revisions
-     - ❌ Reject
-   - Revision integration with feedback incorporation
-
-4. **Data Management**
-   - Conversation storage for analysis
-   - Evaluation metrics collection
-   - Performance tracking and optimization
+- **Contextual Memory**: Context is preserved, email by email
+- **Source Citations**: Sources retrieved from the knowledge base for response generation are cited in every message response
 
 ## 🚀 Project Status & Milestones
 
@@ -153,21 +111,14 @@ graph TD
 - OpenAI API credentials
 - Pinecone vector database account
 - Azure PostgreSQL Flexible Server
-- Label Studio instance
-
-### Configuration
-
-**Primary Workflow**: `BSC_Agent__Email_.json` - Main n8n workflow definition
-
-**Database Schemas**: Conversation logging and evaluation tables
 
 ## 📈 Expected Impact
 
 ### Operational Benefits
 
-- **Response Time**: Reduction from hours to minutes
-- **Consistency**: Standardized, policy-compliant responses
-- **Cost Efficiency**: Reduced reliance on part-time staffing
+- **Response Time**: Reduction in the time required to respond to end-users
+- **Consistency**: Standardized, knowledge search
+- **Cost Efficiency**: Reduced reliance on manual knowledge search
 - **Scalability**: Handle peak periods without service degradation
 
 ### Educational Alignment
@@ -213,7 +164,7 @@ This project represents BYU-Idaho's entry into institutional AI deployment, serv
 
 ## 📄 License & Compliance
 
-This project operates under BYU-Idaho's institutional policies and Church Educational System guidelines. All AI implementations must comply with:
+This project contains proprietary code and is not licensed for reuse. The codebase is therefore gated and stored in private repositories. For compliance, this project operates under BYU-Idaho's institutional policies and Church Educational System guidelines. All AI implementations must comply with:
 
 - FERPA privacy requirements
 - CES data governance policies
@@ -222,4 +173,6 @@ This project operates under BYU-Idaho's institutional policies and Church Educat
 
 ---
 
-_This document represents BYU-Idaho's commitment to responsible AI development and deployment in service of student success and institutional mission._
+_This document represents BYU-Idaho's commitment to responsible, transparent, and ethical AI development and deployment in support of the university's mission and core strategies._
+
+_Built with ❤️ by BYU‑Idaho AI Engineering_
