@@ -6,7 +6,7 @@
 
 ## 🎯 Executive Summary
 
-The **BSC Agent** is a pioneering Retrieval-Augmented Generation (RAG) AI system designed to revolutionize student support services at Brigham Young University-Idaho. As the university's inaugural AI project, this system addresses critical challenges in support ticket volume and response quality while maintaining BYU-Idaho's values of Christ-like service and academic excellence.
+The **Email Agent** is a pioneering Retrieval-Augmented Generation (RAG) AI system designed to automatically reply to support emails at Brigham Young University-Idaho. This system addresses critical challenges in volume and quality of email responses to support emails while maintaining BYU-Idaho's values of Christ-like service and academic excellence.
 
 ## 📋 Project Overview
 
@@ -206,7 +206,6 @@ This project represents BYU-Idaho's entry into institutional AI deployment, serv
 
 **Developer**: Ron Vallejo, AI Engineer  
 **Email**: [vallejor@byui.edu](mailto:vallejor@byui.edu)  
-**Project Repository**: [Github | BYUI-Information-Technology / BSC-Agent](https://github.com/BYUI-Information-Technology/BSC-Agent)
 
 **Stakeholders**:
 - Brian Schow, Project Manager
